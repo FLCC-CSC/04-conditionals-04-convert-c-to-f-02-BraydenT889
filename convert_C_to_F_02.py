@@ -15,21 +15,22 @@
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
 
-while True:
-    print("===== Temperature Converter =====\n")
-    print("  1. Convert from Celsius to Fahrenheit")
-    print("  2. Convert from Fahrenheit to Celsius\n")
-    
-    choice = int(input("Please choose from the above menu: "))
-    temperature = float(input("Enter a temperature to convert: "))
-    print()
-    
-    if choice == 1:
-        converted = temperature * 9 / 5 + 32
-        print(f"{temperature:.1f} degrees Celsius is {converted:.1f} degrees Fahrenheit.\n")
-    elif choice == 2:
-        converted = (temperature - 32) * 5 / 9
-        print(f"{temperature:.1f} degrees Fahrenheit is {converted:.1f} degrees Celsius.\n")
+# ===== Temperature Converter =====
+
+print("===== Temperature Converter =====\n")
+print("  1. Convert from Celsius to Fahrenheit")
+print("  2. Convert from Fahrenheit to Celsius\n")
+
+choice = int(input("Please choose from the above menu: "))
+temperature = float(input("Enter a temperature to convert: "))
+print()
+
+if choice == 1:
+    converted = temperature * 9 / 5 + 32
+    print(f"{temperature:.1f} degrees Celsius is {converted:.1f} degrees Fahrenheit.\n")
+elif choice == 2:
+    converted = (temperature - 32) * 5 / 9
+    print(f"{temperature:.1f} degrees Fahrenheit is {converted:.1f} degrees Celsius.\n")
 
 
 
